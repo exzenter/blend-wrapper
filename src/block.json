@@ -7,7 +7,6 @@
   "category": "design",
   "icon": "admin-customizer",
   "description": "Wrapper für Content mit mix-blend-mode (absolut positioniert)",
-  "parent": ["gsb/gradient-stripe"],
   "supports": {
     "html": false,
     "anchor": true,
