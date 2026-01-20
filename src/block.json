@@ -1,0 +1,66 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gsb/blend-wrapper",
+  "version": "1.0.0",
+  "title": "Blend Wrapper",
+  "category": "design",
+  "icon": "admin-customizer",
+  "description": "Wrapper für Content mit mix-blend-mode (absolut positioniert)",
+  "parent": ["gsb/gradient-stripe"],
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "className": true,
+    "spacing": {
+      "padding": true,
+      "margin": false
+    }
+  },
+  "attributes": {
+    "blendMode": {
+      "type": "string",
+      "default": "difference"
+    },
+    "opacity": {
+      "type": "number",
+      "default": 100
+    },
+    "positionTop": {
+      "type": "string",
+      "default": "50%"
+    },
+    "positionLeft": {
+      "type": "string",
+      "default": "50%"
+    },
+    "transformX": {
+      "type": "string",
+      "default": "-50%"
+    },
+    "transformY": {
+      "type": "string",
+      "default": "-50%"
+    },
+    "positionTopMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "positionLeftMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "transformXMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "transformYMobile": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "blend-wrapper-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

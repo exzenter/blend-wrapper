@@ -1,0 +1,23 @@
+/**
+ * Blend Wrapper Block - Editor-only Styles
+ */
+
+/* Editor: Visual Indicator */
+.wp-block-gsb-blend-wrapper::before {
+    content: '🎭 Blend Mode Active';
+    position: absolute;
+    top: -24px;
+    left: 0;
+    font-size: 11px;
+    background: #2271b1;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 3px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.wp-block-gsb-blend-wrapper:hover::before {
+    opacity: 1;
+}

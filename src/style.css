@@ -1,0 +1,27 @@
+/**
+ * Blend Wrapper Block - Frontend & Editor Styles
+ */
+
+.wp-block-gsb-blend-wrapper {
+  position: absolute;
+  z-index: 2;
+  /* Position & blend mode via inline styles */
+}
+
+/* Responsive: Mobile overrides */
+@media (max-width: 896px) {
+  .wp-block-gsb-blend-wrapper[data-mobile-top] {
+    top: var(--blend-mobile-top) !important;
+  }
+  
+  .wp-block-gsb-blend-wrapper[data-mobile-left] {
+    left: var(--blend-mobile-left) !important;
+  }
+  
+  .wp-block-gsb-blend-wrapper[data-mobile-transform-x][data-mobile-transform-y] {
+    transform: translate(
+      var(--blend-mobile-transform-x),
+      var(--blend-mobile-transform-y)
+    ) !important;
+  }
+}
